@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>NBC Prezentacija</title>
+	<style>
+	body {
+	font-size:0.5rem
+	}
+	.mapSerbia, .wrapper{
+	width:90%;
+	min-width:300px;
+	max-width:400px;
+	height:100%;
+	/*z-index:-1;*/
+	border-radius:10px;
+	margin:auto;
+	opacity:0.9;
+	}
+	.wrapper{
+		padding-bottom:10%;
+	}
+	.mapSerbia{
+		z-index:-1;
+	}
+	.wrapper{
+		position:relative;
+	}
+	
+	
+	p{
+	font-size:10px;
+	font-weight:bold;
+	background-color:lightgrey;
+	z-index:1;
+	}
+	p:hover{
+	cursor:pointer;
+	background-color:lightblue;
+	color:white;
+	}
+	.right {
+		width:80%;
+	min-width:100px;
+	/*max-width:350px;*/
+	margin:auto;
+	height:80%;
+	/*z-index:-1;*/
+	border-radius:5px;
+	overflowY:auto;
+	opacity:0.9;
+	background-color:lightgrey;
+	background-image:url("https://i.pinimg.com/originals/bb/1c/6c/bb1c6c3aa0b6e14a5161fefe1d621a44.jpg");
+	background-size:300% 300%;
+	background-repeat:no-repeat;
+	box-shadow:7px 7px 5px grey;;
+ 
+	}
+	.right  p{
+	background-color:lightgrey;
+	background-image:url("https://i.pinimg.com/originals/bb/1c/6c/bb1c6c3aa0b6e14a5161fefe1d621a44.jpg");
+	background-size:300% 300%;
+	font-size:10px;
+	background-repeat:no-repeat;
+	margin:auto;
+	
+	padding:20px;
+	-webkit-filter: opacity(1);
+	filter: opacity(1);
+	}
+	h1, h4{
+	text-align:center;
+	
+	}
+	.rowHeader{
+		min-height:10vh;
+		margin:auto;
+		background-image:url("https://www.otpsrbija.rs/wp-content/uploads/2019/02/soge-svet-i-sabra-travel.jpg");
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-position:20% 50%;
+		
+	}
+	.rowSubHeader{
+		min-height:10vh;
+	}
+	.wrap{
+		background-color:#d6c69a;
+		height:100%;
+	}
+	.col{
+	display:inline-block;
+	margin-left:auto;
+	}
+	</style>
+	
+  </head>
+  <body>
+  <div class="row rowHeader container">
+  </div>
+    <h1 id='hElement'>NBC zapocete akcije</h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  <div class="container wrap">
+  <div class="row rowSubHeader">
+  </div>
+  <div class="row main ">
+  <div class="col col-md-6 left">
+  <div  id ='mapNames' class="wrapper">
+  <img src="serbia.png" class="mapSerbia">
+  <p id="p1" >Zrenjanin</p>
+  <p id="p2">Novi Sad</p>
+  <p id="p3" >Indjija</p>
+  <p id="p4" >Vrbas</p>
+  <p id="p5" >Cacak</p>
+  <p id="p6" >Kragujevac</p>
+  <p id="p7" >Leskovac</p>
+  <p id="p8" >Pirot</p>
+  <p id="p9" >Sabac</p>
+  <p id="p10" >Nis</p>
+  <p id="p11" >Jagodina</p>
+  <p id="p12" >Lazarevac</p>
+  <p id="p13" >Smederevo</p>
+  <p id="p14" >Vranje</p>
+  <p id="p15" >Loznica</p>
+  <p id="p16" >Uzice</p>
+  <p id="p17" >Kraljevo</p>
+  <p id="p18" >Arandjelovac</p>
+  <p id="p19" >Vrsac</p>
+  <p id="p20" >Krusevac</p>
+  <p id='p21' >Zajecar</p>
+  <p id='p22' >Stara Pazova</p>
+  <p id='p23' >Pozarevac</p>
+  <p id='p24' >Kula</p>
+  <p id='p25' >Bor</p>
+  </div>
+  <div id="globalniPartneri">
+  </div >
+  
+  </div>
+  <div class="col col-md-5 right">
+  
+  </div>
+  
+ 
+  
+  
+  </script>
+<script src="mainScript.js" ></script>
+ 
+  </body>
+</html>
