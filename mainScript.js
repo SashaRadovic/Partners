@@ -1,30 +1,32 @@
 
- //const proba = require( './proba.js')
-  const positions = {'Zrenjanin':{'left': 35, 'top': 18},
-					'Novi Sad': {'left': 15, 'top': 20},
-					'Indjija':{'left': 10, 'top': 25},
+
+ 
+  const positions = {'Zrenjanin':{'left': 40, 'top': 18},
+					'Novi Sad': {'left': 25, 'top': 20},
+					'Indjija':{'left': 25, 'top': 23},
 					'Vrbas':{'left': 20, 'top': 15},
 					'Cacak':{'left': 25, 'top': 52},
-					'Kragujevac':{'left': 35, 'top': 48},
-					'Leskovac':{'left': 60, 'top': 65},
-					'Pirot':{'left': 80, 'top': 60},
+					'Kragujevac':{'left': 49, 'top': 43},
+					'Leskovac':{'left': 65, 'top': 65},
+					'Pirot':{'left': 85, 'top': 60},
 					'Sabac':{'left': 20, 'top': 30},
-					'Nis':{'left': 65, 'top': 58},
-					'Jagodina':{'left': 55, 'top': 45},
-					'Lazarevac':{'left': 40, 'top': 36},
-					'Smederevo':{'left': 43, 'top': 32},
-					'Vranje': {"left":63, "top":70},
+					'Nis':{'left': 67, 'top': 57},
+					'Jagodina':{'left': 55, 'top': 37},
+					'Lazarevac':{'left': 40, 'top': 32},
+					'Smederevo':{'left': 48, 'top': 29},
+					'Vranje': {"left":72, "top":70},
 					'Loznica':{'left': 15, 'top': 35},
 					'Uzice':{'left': 23, 'top': 57},
-					'Kraljevo':{'left': 35, 'top': 60},
-					'Arandjelovac':{'left': 40, 'top': 41},
+					'Kraljevo':{'left': 36, 'top': 48},
+					'Arandjelovac':{'left': 35, 'top': 35},
 					'Vrsac':{'left': 56, 'top': 22},
 					'Krusevac':{'left': 55, 'top': 52},
-					'Zajecar':{'left':75, 'top': 40},
-					'Stara Pazova':{'left':75, 'top': 40},
-					'Pozarevac':{'left':75, 'top': 40},
-					'Kula':{'left':15, 'top': 15},
+					'Zajecar':{'left':75, 'top': 50},
+					'Stara Pazova':{'left':23, 'top': 26},
+					'Pozarevac':{'left':54, 'top': 32},
+					'Kula':{'left':15, 'top': 13},
 					'Bor':{'left':75, 'top': 40},
+					'Prokuplje':{'left':57, 'top': 61},
 					
 					
 					
@@ -85,11 +87,12 @@
 					'Pozarevac':{'id':'div23', 'textPartners':"",'textAdresses':"", 'opis': ""},
 					'Kula':{'id':'div24', 'textPartners':"",'textAdresses':"", 'opis': ""},
 					'Bor':{'id':'div25', 'textPartners':"",'textAdresses':"", 'opis': ""},
+					'Prokuplje':{'id':'div26', 'textPartners':"",'textAdresses':"", 'opis': ""},
 					
   }
   
   const partnersByPlaces = {
-	'Gigatron- (20% popusta na maloprodajne cene uz izuzece shock cena artikala)': ['Beograd',
+	'Gigatron( Vazi do 01.03.2021)- (20% popusta na maloprodajne cene uz izuzece shock cena artikala)': ['Beograd',
 'Cacak',
 'Gornji Milanovac',
 'Jagodina',
@@ -117,7 +120,7 @@
 'Vrsac',
 'Zajecar',
 'Zrenjanin',],
-	'Djak- (20% popusta na nesnizenu garderobu)':['Aranđelovac',
+	'Djak(vazi do 31.12.2020) - (20% popusta na nesnizenu garderobu)':['Aranđelovac',
 'Backa Palanka',
 'Beograd',
 'Nis',
@@ -144,7 +147,7 @@
 'Zajecar',
 'Zrenjanin',
 ], 
-	'Metro Obuca-(dodatnih 10% popusta na vec snizenu robu)':['Ada',
+	'Metro Obuca(vazi do 31.12.2020)-(dodatnih 10% popusta na vec snizenu robu)':['Ada',
 'Aleksinac',
 'Apatin',
 'Arandjelovac',
@@ -215,8 +218,12 @@
 'Vrsac',
 'Zajecar',
 'Zrenjanin',
-], 'Galerija podova -(dodatnih 10% popusta na vec snizenu robu)':[],
-  'Art invest':[], 'Home Centar Vera-(17% popusta na nesnizenu robu)':['Leskovac', 'Vlasotince', 'Lebane'], 'Tehnomedia':[], 'Martini Vesto-(1000 dinara bonusa na potrosenih 4000)':['Beograd',
+], 'Galerija podova -(dodatnih 10% popusta na vec snizenu robu)':['Backa Palanka','Becej', 'Lazarevac',
+ 'Sremska Mitrovica', 'Ruma', 'Sombor', 'Indjija', 'Nis', 'Arandjelovac', 'Valjevo', 'Krusevac',
+ 'Smederevo','Vranje', 'Kragujevac', 'Kraljevo', 'Pozarevac', 'Jagodina', 'Bor', 'Mladenovac',
+ 'Cacak', 'Novi Sad','Zajecar', 'Pancevo', 'Kikinda', 'Vrsac', 'sabac', 'Leskovac', 'Subotica',
+ 'Pirot', 'Kragujevac', 'Uzice', 'Loznica', 'Beograd'   ],
+  'Art invest':['Beograd', 'Nis', 'Novi Sad'], 'Home Centar Vera(vazi do 31.12.2020)-(17% popusta na nesnizenu robu)':['Leskovac', 'Vlasotince', 'Lebane'], 'Tehnomedia(vazi do 31.12.2020)-20% popusta na maloprodajne cene':['Zajecar', 'Nis'], 'Martini Vesto-(1000 dinara bonusa na potrosenih 4000)':['Beograd',
 'Cacak',
 'Jagodina',
 'Kragujevac',
@@ -227,7 +234,7 @@
 'Paracin',
 'Uzice',
 'Vranje',],
-  'Bubamara':[], 'Donna Line-(10% popusta)':['Vranje'], 'Perfeto obuca-(1000 dinara za kupovinu u vrednosti od 5900 i vise)':['Kragujevac'], 'Milupino':['Zrenjanin'],
+  'Bubamara-(20% popusta na sve nesnizeno)':['Lazarevac'], 'Donna Line(vazi do 31.12.2020)-(10% popusta)':['Vranje'], 'Perfeto obuca-(1000 dinara za kupovinu u vrednosti od 5900 i vise)':['Kragujevac'], 'Milupino(vazi do 31.12.2020)-(poklon vaucer od 1000 dinara za kupovinku preko 5000)':['Zrenjanin'],
   'Passage':['Pancevo'], 'Trgoban-(15% popusta na sve nesnizeno)':['Vrsac', 'Kovacica', 'Pancevo'], 'Vitez & Kom -(15% popusta na sve nesnizeno)':['Vranje','Surdulica', 'Vladicin Han' ],
   'Robna Kuca Hrast-(5% popusta na iznose do 400.000 i 10% popusta na iznose preko 400.000)':['Paracin'], 
   'Tepih Mix-(10% popusta na sve proizvode koji nisu na akciji. Moze se naruciti i on-line)':['Nis'],}
@@ -270,12 +277,20 @@
 	
 	textPartnersWrapper.style.width="45%"
 	textPartners.style.overflow="scroll"
+	textPartners.minWidth="100px"
 	textPartners.style.backgroundColor="#edebe4"
+	textPartners.style.borderRadius="5px"
+	textPartners.style.padding="3px"
 	textPartners.style.marginBottom="5%"
 	textPartnersWrapper.style.display='inline-block';
 	
 	textAdresses.style.backgroundColor="#edebe4"
+	textAdresses.style.padding="3px"
+	textAdressesWrapper.style.borderRadius="5px"
 	textAdressesWrapper.style.marginBottom="5%"
+	
+	textAdresses.style.borderRadius="5px"
+	textAdresses.minWidth="100px"
 	textAdresses.style.overflow="scroll"
 	textAdressesWrapper.style.width="45%"
 	textAdresses.style.display='inline-block';
@@ -323,11 +338,11 @@
 // displays city names with positions
   const cityNames = document.getElementById('mapNames').children
   const cityNamesArray = Array.from(cityNames)
-  console.log(cityNamesArray)
+ 
   
   for (i=1;i<cityNamesArray.length;i++){
   
-	cityNamesArray[i].style.color='red'
+	cityNamesArray[i].style.color='black'
 	cityNamesArray[i].id=i-1
 	cityNamesArray[i].title=detailBoxes[Object.keys(detailBoxes)[i-1]]['opis']
 	cityNamesArray[i].onclick= createDivBox
