@@ -14,9 +14,9 @@
 	font-size:0.5rem
 	}
 	.mapSerbia, .wrapper{
-	width:90%;
-	min-width:300px;
-	max-width:400px;
+	width:300px;
+	/*min-width:300px;
+	max-width:350px;*/
 	height:100%;
 	/*z-index:-1;*/
 	border-radius:10px;
@@ -35,9 +35,10 @@
 	
 	
 	p{
-	font-size:10px;
+	font-size:8px;
 	font-weight:bold;
-	background-color:lightgrey;
+	background-color:transparent;
+	padding:3px;
 	z-index:1;
 	}
 	p:hover{
@@ -55,18 +56,19 @@
 	border-radius:5px;
 	overflowY:auto;
 	opacity:0.9;
-	background-color:lightgrey;
-	background-image:url("https://i.pinimg.com/originals/bb/1c/6c/bb1c6c3aa0b6e14a5161fefe1d621a44.jpg");
+	background-color:#ded9ca;
+	/*background-image:url('https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 	background-size:300% 300%;
-	background-repeat:no-repeat;
+	background-repeat:no-repeat;*/
 	box-shadow:7px 7px 5px grey;;
  
 	}
 	.right  p{
 	background-color:lightgrey;
-	background-image:url("https://i.pinimg.com/originals/bb/1c/6c/bb1c6c3aa0b6e14a5161fefe1d621a44.jpg");
+	background-image:url('https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 	background-size:300% 300%;
 	font-size:10px;
+	padding:3px;
 	background-repeat:no-repeat;
 	margin:auto;
 	
@@ -91,13 +93,36 @@
 		min-height:10vh;
 	}
 	.wrap{
-		background-color:#d6c69a;
+		background-image:url('https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-color:'#ded9ca';
 		height:100%;
 	}
 	.col{
 	display:inline-block;
 	margin-left:auto;
 	}
+	
+	
+	.right div::-webkit-scrollbar {
+  width: 11px;
+}
+.right div{
+  scrollbar-width: thin;
+  scrollbar-color:#ded9ca ;
+}
+.right div::-webkit-scrollbar-track {
+  background:#ded9ca );
+}
+.right  div::-webkit-scrollbar-thumb {
+  background-color:#ded9ca ;
+  border-radius: 6px;
+  border: 3px solid ;
+}
+	
+	
+	
 	</style>
 	
   </head>
@@ -144,6 +169,7 @@
   <p id='p23' >Pozarevac</p>
   <p id='p24' >Kula</p>
   <p id='p25' >Bor</p>
+  <p id='p26' >Prokuplje</p>
   </div>
   <div id="globalniPartneri">
   </div >
