@@ -54,7 +54,7 @@
 	height:80%;
 	/*z-index:-1;*/
 	border-radius:5px;
-	overflowY:auto;
+	overflow-y:auto;
 	opacity:0.9;
 	background-color:#ded9ca;
 	/*background-image:url('https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
@@ -106,7 +106,7 @@
 	
 	
 	.right div::-webkit-scrollbar {
-  width: 11px;
+  width: 5px;
 }
 .right div{
   scrollbar-width: thin;
@@ -117,11 +117,38 @@
 }
 .right  div::-webkit-scrollbar-thumb {
   background-color:#ded9ca ;
-  border-radius: 6px;
-  border: 3px solid ;
+  border-radius: 3px;
+  border: 1px solid ;
 }
+.rightDivText {
+	overflow:scroll;
+	/*min-width:100px;*/
+	background-color:#edebe4;
+	border-radius:5px;
+	padding:3px;
+	margin-bottom:5%;
 	
-	
+
+}
+.rightDivTextWrap {
+	/*background-color:#edebe4;
+	overflow:auto;*/
+	margin-bottom:5%;
+	width:45%;
+	display:inline-block;
+	border-radius:5px;
+}	
+.rightDivTextWrap h6 {
+	padding:3px;
+}
+.spisakPartnera {
+	color:black;
+	margin:1px;
+	font-style:bold;
+}
+.right ul{
+	margin:0;
+}
 	
 	</style>
 	
@@ -170,9 +197,9 @@
   <p id='p24' >Kula</p>
   <p id='p25' >Bor</p>
   <p id='p26' >Prokuplje</p>
+  <p id='p27' >Partneri</p>
   </div>
-  <div id="globalniPartneri">
-  </div >
+
   
   </div>
   <div class="col col-md-5 right">
