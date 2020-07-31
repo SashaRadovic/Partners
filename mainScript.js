@@ -1,6 +1,5 @@
 
-
- 
+ //const proba = require( './proba.js')
   const positions = {'Zrenjanin':{'left': 40, 'top': 18},
 					'Novi Sad': {'left': 25, 'top': 20},
 					'Indjija':{'left': 25, 'top': 23},
@@ -27,6 +26,7 @@
 					'Kula':{'left':15, 'top': 13},
 					'Bor':{'left':75, 'top': 40},
 					'Prokuplje':{'left':57, 'top': 61},
+					'Partneri':{'left':85,'top':2},
 					
 					
 					
@@ -64,7 +64,7 @@
 					
 					'Smederevo':{'id': 'div13', 'textPartners': "U Smederevu sa distributerom PC opreme komparator dogovreni dani kupovine, sa Opticarskom radnjom izradu vaucera", 'textAdresses':"", 'opis':""},
 					
-					'Vranje': {'id': 'div14', 'textPartners': "Sa Alfa PLamom dogovorena saradnja poslat ugovor na potpisivanje, Sa Simpom dogovoreno ukljucivanje u paket uz stambeni kredit. podeljeni vauceri Donaline 10% ", 'textAdresses':"", 'opis':""},
+					'Vranje': {'id': 'div14', 'textPartners': "Sa Alfa PLamom dogovorena saradnja poslat ugovor na potpisivanje, Sa Simpom dogovoreno ukljucivanje u paket uz stambeni kredit. podeljeni vauceri Donaline 10%. Sa klijentom Mobi Beko potpisan ugovor(proizvodnja namestaja) predlog 8% na maloprodajne cene", 'textAdresses':"", 'opis':""},
 					
 					'Loznica':{'id': 'div15', 'textPartners': "", 'textAdresses':"", 'opis':""},
 					
@@ -87,12 +87,12 @@
 					'Pozarevac':{'id':'div23', 'textPartners':"",'textAdresses':"", 'opis': ""},
 					'Kula':{'id':'div24', 'textPartners':"",'textAdresses':"", 'opis': ""},
 					'Bor':{'id':'div25', 'textPartners':"",'textAdresses':"", 'opis': ""},
-					'Prokuplje':{'id':'div26', 'textPartners':"",'textAdresses':"", 'opis': ""},
-					
+					'Prokuplje':{'id':'div26', 'textPartners':"Potpisani ugovori sa SZTR Baniko(proizvodnja namestaja po meri) uz predlog za vaucer od 10% popusta na iznose preko 100.000dinara",'textAdresses':"", 'opis': ""},
+					'Partneri':{'id':'div27', 'textPartners':"Mapa je interaktivna i moze se koristiti na dva nacina:</br>1. Klikom na ime grada na mapi, pokazace se lista partnera u tom gradu </br>2. Klikom na ime partnera, pokazace se u kojim gradovma partner ima ekspoziture.",'textAdresses':"", 'opis': ""},
   }
   
   const partnersByPlaces = {
-	'Gigatron( Vazi do 01.03.2021)- (20% popusta na maloprodajne cene uz izuzece shock cena artikala)': ['Beograd',
+	'Gigatron-( Vazi do 01.03.2021) (20% popusta na maloprodajne cene uz izuzece shock cena artikala)': ['Beograd',
 'Cacak',
 'Gornji Milanovac',
 'Jagodina',
@@ -120,7 +120,7 @@
 'Vrsac',
 'Zajecar',
 'Zrenjanin',],
-	'Djak(vazi do 31.12.2020) - (20% popusta na nesnizenu garderobu)':['Aranđelovac',
+	'Djak-(vazi do 31.12.2020) (20% popusta na nesnizenu garderobu)':['Aranđelovac',
 'Backa Palanka',
 'Beograd',
 'Nis',
@@ -147,7 +147,7 @@
 'Zajecar',
 'Zrenjanin',
 ], 
-	'Metro Obuca(vazi do 31.12.2020)-(dodatnih 10% popusta na vec snizenu robu)':['Ada',
+	'Metro Obuca-(vazi do 31.12.2020)(dodatnih 10% popusta na vec snizenu robu)':['Ada',
 'Aleksinac',
 'Apatin',
 'Arandjelovac',
@@ -218,12 +218,14 @@
 'Vrsac',
 'Zajecar',
 'Zrenjanin',
-], 'Galerija podova -(dodatnih 10% popusta na vec snizenu robu)':['Backa Palanka','Becej', 'Lazarevac',
+], 'Galerija podova-(dodatnih 10% popusta na vec snizenu robu)':['Backa Palanka','Becej', 'Lazarevac',
  'Sremska Mitrovica', 'Ruma', 'Sombor', 'Indjija', 'Nis', 'Arandjelovac', 'Valjevo', 'Krusevac',
  'Smederevo','Vranje', 'Kragujevac', 'Kraljevo', 'Pozarevac', 'Jagodina', 'Bor', 'Mladenovac',
  'Cacak', 'Novi Sad','Zajecar', 'Pancevo', 'Kikinda', 'Vrsac', 'sabac', 'Leskovac', 'Subotica',
  'Pirot', 'Kragujevac', 'Uzice', 'Loznica', 'Beograd'   ],
-  'Art invest':['Beograd', 'Nis', 'Novi Sad'], 'Home Centar Vera(vazi do 31.12.2020)-(17% popusta na nesnizenu robu)':['Leskovac', 'Vlasotince', 'Lebane'], 'Tehnomedia(vazi do 31.12.2020)-20% popusta na maloprodajne cene':['Zajecar', 'Nis'], 'Martini Vesto-(1000 dinara bonusa na potrosenih 4000)':['Beograd',
+  'Art invest-':['Beograd', 'Nis', 'Novi Sad'], 'Home Centar Vera(vazi do 31.12.2020)-(17% popusta na nesnizenu robu)':['Leskovac', 'Vlasotince', 'Lebane'],
+  'Tehnomedia(vazi do 31.12.2020)-20% popusta na maloprodajne cene':['Zajecar', 'Nis','Negotin', 'Bor', 'Aleksinac', 'Cuprija', 'Jagodina', 'Paracina', 'Lazarevac', 'Pirot', 'Kraljevo', 'Krusevac', 'Kragujevac', 'Smederevo', 'Beograd', 'M;adenovac', 'Pozarevac', 'Prokuplje' ], 
+ 'Martini Vesto-(1000 dinara bonusa na potrosenih 4000)':['Beograd',
 'Cacak',
 'Jagodina',
 'Kragujevac',
@@ -234,111 +236,163 @@
 'Paracin',
 'Uzice',
 'Vranje',],
-  'Bubamara-(20% popusta na sve nesnizeno)':['Lazarevac'], 'Donna Line(vazi do 31.12.2020)-(10% popusta)':['Vranje'], 'Perfeto obuca-(1000 dinara za kupovinu u vrednosti od 5900 i vise)':['Kragujevac'], 'Milupino(vazi do 31.12.2020)-(poklon vaucer od 1000 dinara za kupovinku preko 5000)':['Zrenjanin'],
-  'Passage':['Pancevo'], 'Trgoban-(15% popusta na sve nesnizeno)':['Vrsac', 'Kovacica', 'Pancevo'], 'Vitez & Kom -(15% popusta na sve nesnizeno)':['Vranje','Surdulica', 'Vladicin Han' ],
+  'Bubamara-(20% popusta na sve nesnizeno)':['Lazarevac'], 'Donna Line-(vazi do 31.12.2020)-(10% popusta)':['Vranje'], 'Perfeto obuca-(1000 dinara za kupovinu u vrednosti od 5900 i vise)':['Kragujevac'], 'Milupino(vazi do 31.12.2020)-(poklon vaucer od 1000 dinara za kupovinku preko 5000)':['Zrenjanin'],
+  'Passage-':['Pancevo'], 'Trgoban-(15% popusta na sve nesnizeno)':['Vrsac', 'Kovacica', 'Pancevo', 'Banatski Karlovac'], 'Vitez & Kom -(15% popusta na sve nesnizeno)':['Vranje','Surdulica', 'Vladicin Han' ],
   'Robna Kuca Hrast-(5% popusta na iznose do 400.000 i 10% popusta na iznose preko 400.000)':['Paracin'], 
   'Tepih Mix-(10% popusta na sve proizvode koji nisu na akciji. Moze se naruciti i on-line)':['Nis'],}
   
-  
+  const keysPartnersByPlaces =Array.from(Object.keys(partnersByPlaces))
   
   
   function createDivBox() {
-  let wrap= document.querySelector('.right')
+	let wrap= document.querySelector('.right')
+	cityNamesArrayClean.forEach(item=>item.style.color='black')
 	function findCity(element) {
-		console.log(element,cityName)
+		
 			if (element===cityName) return true
 		}
-  if (wrap.hasChildNodes()){
+		if (wrap.hasChildNodes()){
   
-  wrap.innerHTML=""}
+			wrap.innerHTML=""}
   
-  const cityName=this.innerHTML
-  let keysPartnersByPlaces =Array.from(Object.keys(partnersByPlaces))
+		const cityName=this.innerHTML
+		
+		this.style.color='red'
+  
  
   
-  //create HTML elements
-	let key = this.id
-	let div = document.createElement('div')
-	let textPartnersWrapper = document.createElement('div')
-	let textAdressesWrapper = document.createElement('div')
-	let textPartners = document.createElement('div')
-	let textAdresses = document.createElement('div')
-	let headline = document.createElement('h4')
-	let headlinePartners=document.createElement('h6')
-	let headlineAdresses=document.createElement('h6')
+		//create HTML elements
+		let key = this.id
+		let div = document.createElement('div')
+		let textPartnersWrapper = document.createElement('div')
+		let textAdressesWrapper = document.createElement('div')
+		let textPartners = document.createElement('div')
+		let textAdresses = document.createElement('div')
+		let headline = document.createElement('h4')
+		let headlinePartners=document.createElement('h6')
+		let headlineAdresses=document.createElement('h6')
 	
 	
-	//adding properties to created elements
-	
-	div.addClassName = 'board'
-	div.style.overflow="auto"
-	div.style.display='flex'
-	div.style.justifyContent='space-between'
-	
-	textPartnersWrapper.style.width="45%"
-	textPartners.style.overflow="scroll"
-	textPartners.minWidth="100px"
-	textPartners.style.backgroundColor="#edebe4"
-	textPartners.style.borderRadius="5px"
-	textPartners.style.padding="3px"
-	textPartners.style.marginBottom="5%"
-	textPartnersWrapper.style.display='inline-block';
-	
-	textAdresses.style.backgroundColor="#edebe4"
-	textAdresses.style.padding="3px"
-	textAdressesWrapper.style.borderRadius="5px"
-	textAdressesWrapper.style.marginBottom="5%"
-	
-	textAdresses.style.borderRadius="5px"
-	textAdresses.minWidth="100px"
-	textAdresses.style.overflow="scroll"
-	textAdressesWrapper.style.width="45%"
-	textAdresses.style.display='inline-block';
+		//adding properties to created elements
 	
 	
-	headline.innerHTML =Object.keys(detailBoxes)[key]
-	headlinePartners.innerHTML='Akcije u toku'
-	headlineAdresses.innerHTML='Lista Partnera'
 	
-	let detailsPartners = detailBoxes[Object.keys(detailBoxes)[key]]['textPartners']
-	let detailsAdresses = detailBoxes[Object.keys(detailBoxes)[key]]['textAdresses']
 	
-	 keysPartnersByPlaces.forEach (function (item) {
-	let cityNamesValues = partnersByPlaces[item]
+		div.addClassName = 'board'
+		div.style.overflow="auto"
+		div.style.display='flex'
+		div.style.justifyContent='space-between'
+	
+	
+		textPartnersWrapper.style.width="45%"
+	
+		textAdressesWrapper.style.width="45%"
+	
+		textAdressesWrapper.className='rightDivTextWrap'
+		textPartnersWrapper.className=' rightDivTextWrap'
+		textAdresses.className='rightDivText'
+		textPartners.className='rightDivText'
+		headline.innerHTML =Object.keys(detailBoxes)[key]
 		
-	 if(cityNamesValues.find(findCity)) {
-	 detailsAdresses+=(item.split('-')[0].bold()+"  "+item.split('-')[1]+". "+" "+"\n")
-	 detailsAdresses+="</br>"
-	 }
-  })
-	textPartners.innerHTML =detailsPartners
+		headlinePartners.innerHTML='Akcije u toku'
+		headlineAdresses.innerHTML='Lista Partnera'
+		
+		let detailsPartners = detailBoxes[Object.keys(detailBoxes)[key]]['textPartners']
+		let detailsAdresses = detailBoxes[Object.keys(detailBoxes)[key]]['textAdresses']
+		
+		
+		keysPartnersByPlaces.forEach (function (item) {
+		let cityNamesValues = partnersByPlaces[item]
+		
+		if(cityNamesValues.find(findCity)) {
+		detailsAdresses+=(item.split('-')[0].bold()+"  "+item.split('-')[1]+". "+" "+"\n")
+		detailsAdresses+="</br>"
+			}
+		})
+		textPartners.innerHTML =detailsPartners
 	
-	textAdresses.innerHTML =detailsAdresses
+		textAdresses.innerHTML =detailsAdresses
 	
 	
 	
-	//asigning elements
-	wrap.appendChild(headline)
-	div.appendChild(textPartnersWrapper)
-	div.appendChild(textAdressesWrapper)
-	textPartnersWrapper.appendChild(headlinePartners)
-	textAdressesWrapper.appendChild(headlineAdresses)
-	textAdressesWrapper.appendChild(textAdresses)
-	textPartnersWrapper.appendChild(textPartners)
-	
+		//asigning elements
+		wrap.appendChild(headline)
+		div.appendChild(textPartnersWrapper)
+		div.appendChild(textAdressesWrapper)
+		textPartnersWrapper.appendChild(headlinePartners)
+		textAdressesWrapper.appendChild(headlineAdresses)
+		textAdressesWrapper.appendChild(textAdresses)
+		textPartnersWrapper.appendChild(textPartners)
+		function checkName (event){
+			event.target.style.backgroundColor='red'
+		}
+		function uncheckName(event){
+			event.target.style.backgroundColor='#edebe4'
+		}
+		
+		if(this.innerHTML ==='Partneri'){
+			let cityPList= document.createElement('ul')
+			cityPList.id='rightList'
+			Object.keys(partnersByPlaces).forEach(item=> {
+			
+			let city = item.split('-')[0]
+			
+			
+			let cityP= document.createElement('li')
+			cityP.innerHTML=city
+			cityP.onclick=showPartners
+			cityP.onmouseover=checkName
+			cityP.onmouseout=uncheckName
+			cityP.className='spisakPartnera'
+			cityPList.appendChild(cityP)
+			textAdresses.appendChild(cityPList)
+			
+			})
+		}
 	wrap.appendChild(div)
 	
 	
 	
-	
   }
- 
-  
+ // extracts first part of the key
+	function checkPartner (item) {
+		
+			if(item.includes(this)){
+				let found   = item.split('-')[0]
+				
+				return found
+			}
+		
+	}
+ // colors cities that are the part of partner's offer
+  function showPartners(ev) {
+	cityNamesArrayClean.forEach(function(item){item.style.color='black'} )
+	 let partnerListArr =Array.from(document.querySelector('#rightList').children)
+	 console.log(partnerListArr)
+	 partnerListArr.forEach(function(item) {console.log(item);item.style.color='black'})
+	
+	const partnerName = ev.target.innerHTML
+	ev.target.style.color='red'
+	
+	let extractPartner = keysPartnersByPlaces.filter(checkPartner, partnerName)
+	let foundCitiesArray = partnersByPlaces[extractPartner]
+	
+	
+	const citiesLighted = cityNamesArrayClean.filter((item)=> foundCitiesArray.includes(item.innerHTML))
+	citiesLighted.forEach(function(item){item.style.color='red'} )
+	
+	}
+	
+
+   
   
 // displays city names with positions
   const cityNames = document.getElementById('mapNames').children
   const cityNamesArray = Array.from(cityNames)
- 
+  const cityNamesArrayClean = cityNamesArray.slice(1)
+  
+  document.getElementById('p27').onload = function(){
+  document.getElementById('p27').click();}
   
   for (i=1;i<cityNamesArray.length;i++){
   
@@ -350,6 +404,11 @@
   cityNamesArray[i].style.left=positions[Object.keys(positions)[i-1]]['left']+'%'
   cityNamesArray[i].style.top=positions[Object.keys(positions)[i-1]]['top']+'%'
   }
+  
+  document.getElementById('26').click();
+  //const globalniPartneri =document.querySelector('#globalniPartneri')
+  //globalniPartneri.addEventListener('click',  showPartners, false)
+   
   
   
  
