@@ -5,19 +5,19 @@
 					'Indjija':{'left': 25, 'top': 23},
 					'Vrbas':{'left': 20, 'top': 15},
 					'Cacak':{'left': 25, 'top': 52},
-					'Kragujevac':{'left': 49, 'top': 43},
+					'Kragujevac':{'left': 40, 'top': 40},
 					'Leskovac':{'left': 65, 'top': 65},
 					'Pirot':{'left': 85, 'top': 60},
 					'Sabac':{'left': 20, 'top': 30},
 					'Nis':{'left': 67, 'top': 57},
-					'Jagodina':{'left': 55, 'top': 37},
+					'Jagodina':{'left': 55, 'top': 44},
 					'Lazarevac':{'left': 40, 'top': 32},
 					'Smederevo':{'left': 48, 'top': 29},
 					'Vranje': {"left":72, "top":70},
 					'Loznica':{'left': 15, 'top': 35},
 					'Uzice':{'left': 23, 'top': 57},
 					'Kraljevo':{'left': 36, 'top': 48},
-					'Arandjelovac':{'left': 35, 'top': 35},
+					'Arandjelovac':{'left': 32, 'top': 35},
 					'Vrsac':{'left': 56, 'top': 22},
 					'Krusevac':{'left': 55, 'top': 52},
 					'Zajecar':{'left':75, 'top': 50},
@@ -27,6 +27,21 @@
 					'Bor':{'left':75, 'top': 40},
 					'Prokuplje':{'left':57, 'top': 61},
 					'Partneri':{'left':85,'top':2},
+					'Pancevo':{'left':43,'top':26},
+					'Beograd':{'left':33,'top':29},
+					'B Palanka':{'left':12,'top':22},
+					'Aleksinac':{'left':62,'top':55},
+					'Novi Pazar':{'left':26,'top':60},
+					'Subotica':{'left': 20, 'top': 3},
+					'Sombor':{'left': 9, 'top': 10},
+					'Becej':{'left': 30, 'top': 15},
+					'Kikinda':{'left': 35, 'top': 10},
+					'Backa Topola':{'left': 10, 'top': 6},
+					'Senta':{'left': 28, 'top': 6},
+					'Paracin':{'left': 55, 'top': 39},
+					'Cuprija':{'left': 57, 'top': 42},
+					'V PLana':{'left': 45, 'top': 34},
+					'Svilajnac':{'left': 49, 'top': 36},
 					
 					
 					
@@ -89,6 +104,21 @@
 					'Bor':{'id':'div25', 'textPartners':"",'textAdresses':"", 'opis': ""},
 					'Prokuplje':{'id':'div26', 'textPartners':"Potpisani ugovori sa SZTR Baniko(proizvodnja namestaja po meri) uz predlog za vaucer od 10% popusta na iznose preko 100.000dinara",'textAdresses':"", 'opis': ""},
 					'Partneri':{'id':'div27', 'textPartners':"Mapa je interaktivna i moze se koristiti na dva nacina:</br>1. Klikom na ime grada na mapi, pokazace se lista partnera u tom gradu </br>2. Klikom na ime partnera, pokazace se u kojim gradovma partner ima ekspoziture.",'textAdresses':"", 'opis': ""},
+					'Pancevo':{'id':'div28', 'textPartners':"",'textAdresses':"", 'opis': ""},
+					'Beograd':{'id':'div29', 'textPartners':"",'textAdresses':"", 'opis': ""},
+					'B Palanka':{'id':'div30', 'textPartners':"",'textAdresses':"", 'opis': ""},
+					'Aleksinac':{'id':'div31', 'textPartners':"",'textAdresses':"", 'opis': ""},
+					'Novi Pazar':{'id':'div32', 'textPartners':"",'textAdresses':"", 'opis': ""},
+					'Subotica':{'id':'div33', 'textPartners':"",'textAdresses':"", 'opis': ""},
+					'Sombor':{'id':'div34', 'textPartners':"",'textAdresses':"", 'opis': ""},
+					'Becej':{'id':'div35', 'textPartners':"",'textAdresses':"", 'opis': ""},
+					'Kikinda':{'id':'div36', 'textPartners':"",'textAdresses':"", 'opis': ""},
+					'Backa Topola':{'id':'div37', 'textPartners':"",'textAdresses':"", 'opis': ""},
+					'Senta':{'id':'div38', 'textPartners':"",'textAdresses':"", 'opis': ""},
+					'Paracin':{'id':'div39', 'textPartners':"",'textAdresses':"", 'opis': ""},
+					'Cuprija':{'id':'div40', 'textPartners':"",'textAdresses':"", 'opis': ""},
+					'V PLana':{'id':'div41', 'textPartners':"",'textAdresses':"", 'opis': ""},
+					'Svilajnac':{'id':'div42', 'textPartners':"",'textAdresses':"", 'opis': ""},
   }
   
   const partnersByPlaces = {
@@ -121,7 +151,7 @@
 'Zajecar',
 'Zrenjanin',],
 	'Djak-(vazi do 31.12.2020) (20% popusta na nesnizenu garderobu)':['Aranđelovac',
-'Backa Palanka',
+'B Palanka',
 'Beograd',
 'Nis',
 'Novi Pazar',
@@ -142,7 +172,7 @@
 'Subotica',
 'Ub',
 'Uzice',
-'Velika Plana',
+'V Plana',
 'Vranje',
 'Zajecar',
 'Zrenjanin',
@@ -152,7 +182,7 @@
 'Apatin',
 'Arandjelovac',
 'Arilje',
-'Backa palanka',
+'B Palanka',
 'Bajina basta',
 'Banjica',
 'Becej',
@@ -218,10 +248,10 @@
 'Vrsac',
 'Zajecar',
 'Zrenjanin',
-], 'Galerija podova-(dodatnih 10% popusta na vec snizenu robu)':['Backa Palanka','Becej', 'Lazarevac',
+], 'Galerija podova-(dodatnih 10% popusta na vec snizenu robu)':['B Palanka','Becej', 'Lazarevac',
  'Sremska Mitrovica', 'Ruma', 'Sombor', 'Indjija', 'Nis', 'Arandjelovac', 'Valjevo', 'Krusevac',
  'Smederevo','Vranje', 'Kragujevac', 'Kraljevo', 'Pozarevac', 'Jagodina', 'Bor', 'Mladenovac',
- 'Cacak', 'Novi Sad','Zajecar', 'Pancevo', 'Kikinda', 'Vrsac', 'sabac', 'Leskovac', 'Subotica',
+ 'Cacak', 'Novi Sad','Zajecar', 'Pancevo', 'Kikinda', 'Vrsac', 'Sabac', 'Leskovac', 'Subotica',
  'Pirot', 'Kragujevac', 'Uzice', 'Loznica', 'Beograd'   ],
   'Art invest-':['Beograd', 'Nis', 'Novi Sad'], 'Home Centar Vera(vazi do 31.12.2020)-(17% popusta na nesnizenu robu)':['Leskovac', 'Vlasotince', 'Lebane'],
   'Tehnomedia(vazi do 31.12.2020)-20% popusta na maloprodajne cene':['Zajecar', 'Nis','Negotin', 'Bor', 'Aleksinac', 'Cuprija', 'Jagodina', 'Paracina', 'Lazarevac', 'Pirot', 'Kraljevo', 'Krusevac', 'Kragujevac', 'Smederevo', 'Beograd', 'M;adenovac', 'Pozarevac', 'Prokuplje' ], 
@@ -236,16 +266,19 @@
 'Paracin',
 'Uzice',
 'Vranje',],
-  'Bubamara-(20% popusta na sve nesnizeno)':['Lazarevac'], 'Donna Line-(vazi do 31.12.2020)-(10% popusta)':['Vranje'], 'Perfeto obuca-(1000 dinara za kupovinu u vrednosti od 5900 i vise)':['Kragujevac'], 'Milupino(vazi do 31.12.2020)-(poklon vaucer od 1000 dinara za kupovinku preko 5000)':['Zrenjanin'],
-  'Passage-':['Pancevo'], 'Trgoban-(15% popusta na sve nesnizeno)':['Vrsac', 'Kovacica', 'Pancevo', 'Banatski Karlovac'], 'Vitez & Kom -(15% popusta na sve nesnizeno)':['Vranje','Surdulica', 'Vladicin Han' ],
+  'Bubamara-(20% popusta na sve nesnizeno)':['Lazarevac'], 'Donna Line-(vazi do 31.12.2020) 10% popusta na sve nesnizeno':['Vranje'], 'Perfeto obuca-(1000 dinara za kupovinu u vrednosti od 5900 i vise)':['Kragujevac'], 'Milupino(vazi do 31.12.2020)-(poklon vaucer od 1000 dinara za kupovinku preko 5000)':['Zrenjanin'],
+  'Passage-':['Pancevo'], 'Trgoban-(15% popusta na sve nesnizeno)':['Vrsac', 'Kovacica', 'Pancevo', 'Banatski Karlovac'], 'Vitez  Kom -(15% popusta na sve nesnizeno)':['Vranje','Surdulica','Vladicin Han' ],
   'Robna Kuca Hrast-(5% popusta na iznose do 400.000 i 10% popusta na iznose preko 400.000)':['Paracin'], 
-  'Tepih Mix-(10% popusta na sve proizvode koji nisu na akciji. Moze se naruciti i on-line)':['Nis'],}
+  'Tepih Mix-(10% popusta na sve proizvode koji nisu na akciji. Moze se naruciti i online)':['Nis'],}
   
   const keysPartnersByPlaces =Array.from(Object.keys(partnersByPlaces))
   
   
   function createDivBox() {
+	
 	let wrap= document.querySelector('.right')
+	wrap.classList.add('animateDiv')
+
 	cityNamesArrayClean.forEach(item=>item.style.color='black')
 	function findCity(element) {
 		
@@ -323,6 +356,8 @@
 		textAdressesWrapper.appendChild(headlineAdresses)
 		textAdressesWrapper.appendChild(textAdresses)
 		textPartnersWrapper.appendChild(textPartners)
+		
+		
 		function checkName (event){
 			event.target.style.backgroundColor='red'
 		}
@@ -351,7 +386,7 @@
 		}
 	wrap.appendChild(div)
 	
-	
+		wrap.classList.remove('animateDiv')
 	
   }
  // extracts first part of the key
@@ -368,7 +403,7 @@
   function showPartners(ev) {
 	cityNamesArrayClean.forEach(function(item){item.style.color='black'} )
 	 let partnerListArr =Array.from(document.querySelector('#rightList').children)
-	 console.log(partnerListArr)
+	
 	 partnerListArr.forEach(function(item) {console.log(item);item.style.color='black'})
 	
 	const partnerName = ev.target.innerHTML
